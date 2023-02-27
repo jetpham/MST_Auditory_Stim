@@ -55,23 +55,21 @@ jatos.onLoad(function() {
 
   var demogform = {
     type: 'survey-html-form',
-    preamble: 'The National Institute of Health (NIH) mandates that we collect demographic information from participants and that we collect it <i>in this specific format</i>.',
+    preamble: 'I am collecting demographic information to discover more about the influeces behind the results that you had</i>.',
     html: '<div style="text-align: left; font-size: 16px; line-height: 110%"> \
-    <p><b>Full name: </b> <input name="fullname" type="text" required /></p> \
-    <p> <b>Date of birth (DD/MM/YYYY):</b> <input name="dob" type="text" required /></p> \
+     <p> <b>Grade Level:</b> <input name="grade" type="text" required /></p> \
+<p> <b>Age:</b> <input name="age" type="text" required /></p> \
     <p> <b>Gender: </b>\
-       <br><input type="radio" id="male" name="gender" value="male" style="margin-left: 50px" required > <label for="male"> Male </label> \
-       <br><input type="radio" id="female" name="gender" value="female" style="margin-left: 50px"  > <label for="female"> Female </label> \
-    <p> <b>Ethnicity: </b>\
-       <br><input type="radio" id="hispanic" name="ethnicity" value="hispanic" style="margin-left: 50px" required> <label for="hispanic"> Hispanic or Latino </label>  \
-       <br><input type="radio" id="nonhispanic" name="ethnicity" value="nonhispanic" style="margin-left: 50px"> <label for="nonhispanic"> Not Hispanic or Latino </label> \
-    <p> <b>Race with which you identify most: </b>\
-       <br><input type="radio" id="nativeamerican" name="race" value="nativeamerican" style="margin-left: 50px" required> <label for="nativeamerican"> American Indian or Alaska Native </label> \
-       <br><input type="radio" id="asian" name="race" value="asian" style="margin-left: 50px"> <label for="asian"> Asian </label> \
-       <br><input type="radio" id="black" name="race" value="black" style="margin-left: 50px"> <label for="black"> Black or African American </label> \
-       <br><input type="radio" id="nativehawaiian" name="race" value="nativehawaiian" style="margin-left: 50px"> <label for="nativehawaiian"> Native Hawaiian or Pacific Islander </label> \
-       <br><input type="radio" id="white" name="race" value="white" style="margin-left: 50px"> <label for="white"> White </label> \
-       <br><input type="radio" id="more" name="race" value="more" style="margin-left: 50px"> <label for="more"> More than one race or Other </label> \
+	<br><input type="radio" id="male" name="gender" value="male" style="margin-left: 50px" required > <label for="male"> Male </label> \
+	<br><input type="radio" id="female" name="gender" value="female" style="margin-left: 50px"  > <label for="female"> Female </label> \
+	<br><input type="radio" id="other" name="gender" value="other" style="margin-left: 50px"  > <label for="other"> Other </label> \
+    <p> <b>Do you prefer STEM subjects or Liberal Arts subjetcs?: </b>\
+       <br><input type="radio" id="stem" name="favsub" value="stem" style="margin-left: 50px" required> <label for="stem"> STEM </label>  \
+       <br><input type="radio" id="liberal" name="favsub" value="liberal" style="margin-left: 50px"> <label for="liberal"> Liberal Arts </label> \
+    <p> <b>Is your most recent known GPA less than, similar to, or greater than 2.7</b>\
+       <br><input type="radio" id="less" name="gpa" value="less" style="margin-left: 50px" required> <label for="less"> Less than 2.7 </label> \
+       <br><input type="radio" id="similar" name="gpa" value="similar" style="margin-left: 50px"> <label for="similar"> Similar to 2.7 </label> \
+       <br><input type="radio" id="greater" name="gpa" value="greater" style="margin-left: 50px"> <label for="greater"> Greater than 2.7 </label> \
     </div>'
   }
   
